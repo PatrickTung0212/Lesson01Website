@@ -21,12 +21,7 @@ function mainGame() {
   Initial();
   GetPlayerInput();
 
-  if (!checkNameInputSuccess) {
-    return;
-  }
-  if(!checkWeatherInputSuccess){
-    return;
-  }
+  
   DisplayInfo();
 
 }
@@ -65,25 +60,43 @@ function GetPlayerInput() {
     checkWeatherInputSuccess = true;
   }
 
+ 
+
 }
 
+
 function DisplayInfo() {
+
+  if (checkNameInputSuccess == false) 
+  {
+    return;
+  }
+  if(checkWeatherInputSuccess  == false)
+  {
+    return;
+  }
+
   nameTextElement.innerText = "" + inputName;
   weatherTextElement.innerText = "" + inputWeather;
 
-  if (inputWeather.toLowerCase() == "sunny") {
+  if (inputWeather.toLowerCase() == "sunny") 
+  {
     weatherImageElement.src = "./Assets/SunnyIcon.jpg";
   }
-  else if (inputWeather.toLowerCase() == "rainy") {
+  else if (inputWeather.toLowerCase() == "rainy") 
+  {
     weatherImageElement.src = "./Assets/RainyIcon.jpg";
   }
-  else if (inputWeather.toLowerCase() == "cloudy") {
+  else if (inputWeather.toLowerCase() == "cloudy") 
+  {
     weatherImageElement.src = "./Assets/CloudyIcon.jpg";
   }
-  else if (inputWeather.toLowerCase() == "windy") {
+  else if (inputWeather.toLowerCase() == "windy") 
+  {
     weatherImageElement.src = "./Assets/WindyIcon.jpg";
   }
-  else if (inputWeather == null) {
+  else if (inputWeather == null) 
+  {
 
   }
 
