@@ -1,0 +1,36 @@
+.flex-container{
+    border: 5px solid white;
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    padding: 5px;
+    margin: 10px;
+}
+
+.flex-container-homework{
+    border: 5px solid white;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+/* .flex-container div{
+    height: 30px;
+    width: 30px;
+    margin : 10px; 
+} */
+
+#box1{
+    background-color: blueviolet;
+
+}
+
+#box2{
+    background-color: red;
+
+}
+
+#box3{
+    background-color: green;
+
+}
+

@@ -1,0 +1,141 @@
+.thumbnail {
+    width: 15px;
+    height: auto;
+
+}
+
+.homeworkThumbnail {
+    width: 256px;
+    height: auto;
+}
+
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+a {
+    color: white;
+}
+
+li {
+    margin-bottom: 0px;
+    padding-left: 0px
+}
+
+li span {
+    padding-left: 10px;
+    /* 調整您需要的左側間距大小 */
+}
+
+div {
+    margin: 10px;
+}
+
+.div-without-margin {
+    margin: 0px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+button {
+
+    border: 1px solid #000000;
+
+}
+
+.boldText{
+    font-weight: bolder;
+}
+
+
+button:hover {
+    background-color: grey;
+}
+
+.black-div {
+    background-color: white;
+    height: 10px;
+}
+
+.div-with-margin {
+    margin: 40px;
+}
+
+
+.content {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 700px;
+    padding: 10px;
+    margin: 0 auto;
+    /* 水平置中對齊 */
+
+}
+
+
+
+
+.child01 {
+
+    width: 500px;
+    padding: 20px;
+
+}
+
+.child02 {
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+
+    background-color: rgba(6, 22, 31, 0.2);
+
+    padding: 15px;
+    position: relative;
+    left: 0px;
+    width: 500px;
+}
+
+.image-container {
+    display: flex;
+    /* 將父元素設置為Flexbox佈局 */
+    justify-content: center;
+    /* 水平置中對齊 */
+    align-items: center;
+    /* 垂直置中對齊 */
+    position: relative;
+    /* 父元素設置為相對定位 */
+}
+
+.text-overlay {
+    position: absolute;
+    /* 文本元素設置為絕對定位 */
+    color: white;
+    /* 設置文本顏色 */
+    font-size: 24px;
+    /* 設置文本大小 */
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 20px;
+    }
+}
